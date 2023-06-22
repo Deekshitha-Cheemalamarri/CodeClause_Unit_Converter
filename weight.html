@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+          <!--for background image-->
+          <style>
+            body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('http://wallpapercave.com/wp/SVMyCtb.jpg');
+
+  /* Full height */
+  height: 100%;
+
+font-family: times;
+  color:  rgb(11, 78, 104);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+.mame{
+  
+  margin-left: 380px;
+  font-size:30px;
+
+}
+select,input{
+  font-size: 20px;
+  height:30px;
+}
+button{
+  font-size: 20px;
+  height:30px;
+}
+</style>
+
+</head>
+    <body>
+        <div class="bg">
+         <h1 style="margin-top: 100px; text-align: center;font-size: 50px;">Weight</h1><br>
+         <br><br>
+         <br>
+         
+         <form class="mame" id="myform" >
+          <label for="input">Input:</label>
+          <input type="number" id="input" name="input" placeholder="Input" style="width: 200px">
+          <label for="inputtype">Choose units of input:</label>
+          <select id="inputtype">
+              <option value="Gram">Gram</option>
+              <option value="Kilogram">Kilogram</option>
+              <option value="Milligram">Milligram</option>
+              <option value="Metric Ton">Metric Ton</option>
+              <option value="Long Ton">Long Ton</option>
+              <option value="Short Ton">Short Ton</option>
+              <option value="Pound">Pound</option>
+              <option value="Ounce">Ounce</option>
+              <option value="Carrat">Carrat</option>
+              <option value="Atomic Mass Unit">Atomic Mass Unit</option>
+            </select>
+            <br><br>
+            <label for="outputtype">Choose units of output:</label>
+            <select id="outputtype" name="outputtype">
+                <option value="Gram">Gram</option>
+                <option value="Kilogram">Kilogram</option>
+                <option value="Milligram">Milligram</option>
+                <option value="Metric Ton">Metric Ton</option>
+                <option value="Long Ton">Long Ton</option>
+                <option value="Short Ton">Short Ton</option>
+                <option value="Pound">Pound</option>
+                <option value="Ounce">Ounce</option>
+                <option value="Carrat">Carrat</option>
+                <option value="Atomic Mass Unit">Atomic Mass Unit</option>
+            </select>
+            <br>
+          
+          
+          <br>
+       <!--   <input type="submit" value="Submit">
+          <br><br>-->
+          <span id="output"></span>
+            <br><br> 
+            <button type="button" onclick="myResult()">Submit</button>
+            <br>
+        </form>
+        <br>
+        <button style="display:block; margin: 0 auto;"><a href="index.html" style="color: black;">Home</a></button>
+        </div>
+<script src="weight.js" language="javascript" type="text/javascript"></script>
+    </body>
+</html>

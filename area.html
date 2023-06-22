@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+          <!--for background image-->
+          <style>
+            body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url('http://wallpapercave.com/wp/SVMyCtb.jpg');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  font-family: times;
+  color:  rgb(11, 78, 104);
+}
+.mame{
+  
+  margin-left: 380px;
+  font-size:30px;
+
+}
+
+select,input{
+  font-size: 20px;
+  height:30px;
+}
+button{
+  font-size: 20px;
+  height:30px;
+  text-align: center;
+}
+</style>
+
+</head>
+    <body>
+        <div class="bg">
+         <h1 style="margin-top: 100px; text-align: center;font-size: 50px;">Area</h1><br>
+         <br><br>
+         <br>
+         
+         <form class="mame" id="myform" >
+          <label for="input">Input:</label>
+          <input type="number" id="input" name="input" placeholder="Input" style="width: 200px">
+          <label for="inputtype">Choose units of input:</label>
+          <select id="inputtype">
+              <option value="Square Meter">Square Meter</option>
+              <option value="Square Kilometer">Square Kilometer</option>
+              <option value="Square Centimeter">Square Centimeter</option>
+              <option value="Square Millimeter">Square Millimeter</option>
+              <option value="Square Micrometer">Square Micrometer</option>
+              <option value="Hectare">Hectare</option>
+              <option value="Square Mile">Square Mile</option>
+              <option value="Square Yard">Square Yard</option>
+              <option value="Square Feet">Square Foot</option>
+              <option value="Square Inch">Square Inch</option>
+              <option value="Acre">Acre</option>
+            </select>
+            <br><br>
+            <label for="outputtype">Choose units of output:</label>
+            <select id="outputtype" name="outputtype">
+              <option value="Square Meter">Square Meter</option>
+              <option value="Square Kilometer">Square Kilometer</option>
+              <option value="Square Centimeter">Square Centimeter</option>
+              <option value="Square Millimeter">Square Millimeter</option>
+              <option value="Square Micrometer">Square Micrometer</option>
+              <option value="Hectare">Hectare</option>
+              <option value="Square Mile">Square Mile</option>
+              <option value="Square Yard">Square Yard</option>
+              <option value="Square Feet">Square Foot</option>
+              <option value="Square Inch">Square Inch</option>
+              <option value="Acre">Acre</option>
+            </select>
+            <br>
+          <br>
+       
+          <span id="output"></span>
+            <br><br> 
+            <button type="button" onclick="myResult()">Submit</button>
+            <br><br>
+            
+        </form>
+        <button style="display:block; margin: 0 auto;"><a href="index.html" style="color: black;">Home</a></button>
+        </div>
+<script src="area.js" language="javascript" type="text/javascript"></script>
+
+    </body>
+</html>
